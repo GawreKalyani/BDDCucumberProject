@@ -38,6 +38,12 @@ static int row =1;
 	Sheet sh=wb.getSheet("operator");
 	int col =sh.getRow(row).getLastCellNum();
 	for(int i=0;i<col;i++){
+		if(i==0 && row>0){
+			
+			Cell cell= sh.getRow(row).getCell(i);
+			String value = String.valueOf((long)cell.getNumericCellValue());
+			al.add("0"+value);
+		}else{
 		Cell cell= sh.getRow(row).getCell(i);
 		if(cell.getCellTypeEnum()==CellType.STRING)
 			al.add(cell.getStringCellValue());
@@ -45,6 +51,7 @@ static int row =1;
 		else if(cell.getCellTypeEnum()==CellType.NUMERIC){
 			String value = String.valueOf((long)cell.getNumericCellValue());
 			al.add(value);
+		}
 		}
 	}
 	return al;
@@ -114,7 +121,8 @@ static int row =1;
 	@Then("^validating OperatorTable data with Excel$")
 	public void validating_OperatorTable_data_with_Excel() throws Throwable {
 		 while(row<6){
-	        	Assert.assertEquals(readRow(row-1), op.getOperatorTableRowdata(row));	
+			 for(int i=0;i<readRow(row-1).size()-1;i++)
+	        	Assert.assertEquals(readRow(row-1).get(i), op.getOperatorTableRowdata(row).get(i));	
 	        	row++;
 	        }
 	}
