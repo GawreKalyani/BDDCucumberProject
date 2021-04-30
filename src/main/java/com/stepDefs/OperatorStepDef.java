@@ -34,25 +34,25 @@ static int row =1;
 		wb=WorkbookFactory.create(fis);
 	} catch (Exception e) {
 		e.printStackTrace();
-		//demo line----
-	}
-	Sheet sh=wb.getSheet("operator");
+		}
+	Sheet sh=wb.getSheet("operator1");
 	int col =sh.getRow(row).getLastCellNum();
 	for(int i=0;i<col;i++){
-		if(i==0 && row>0){
-			
+		if(i==0 && row>0)
+		{
 			Cell cell= sh.getRow(row).getCell(i);
 			String value = String.valueOf((long)cell.getNumericCellValue());
 			al.add("0"+value);
-		}else{
-		Cell cell= sh.getRow(row).getCell(i);
-		if(cell.getCellTypeEnum()==CellType.STRING)
-			al.add(cell.getStringCellValue());
-		
-		else if(cell.getCellTypeEnum()==CellType.NUMERIC){
-			String value = String.valueOf((long)cell.getNumericCellValue());
-			al.add(value);
 		}
+		else{
+			Cell cell= sh.getRow(row).getCell(i);
+			if(cell.getCellTypeEnum()==CellType.STRING)
+				al.add(cell.getStringCellValue());
+			
+			else if(cell.getCellTypeEnum()==CellType.NUMERIC){
+				String value = String.valueOf((long)cell.getNumericCellValue());
+				al.add(value);
+			}
 		}
 	}
 	return al;

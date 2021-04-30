@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 5075956200,
+  "duration": 2961935700,
   "status": "passed"
 });
 formatter.scenario({
@@ -33,12 +33,11 @@ formatter.match({
   "location": "OperatorStepDef.validating_OperatorTable_data_with_Excel()"
 });
 formatter.result({
-  "duration": 2657265700,
-  "error_message": "org.junit.ComparisonFailure: expected:\u003cTechnical Discussion[](Errors, Software, T...\u003e but was:\u003cTechnical Discussion[ ](Errors, Software, T...\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat com.stepDefs.OperatorStepDef.validating_OperatorTable_data_with_Excel(OperatorStepDef.java:125)\r\n\tat ✽.Then validating OperatorTable data with Excel(operator.feature:25)\r\n",
-  "status": "failed"
+  "duration": 3698347500,
+  "status": "passed"
 });
 formatter.after({
-  "duration": 115207900,
+  "duration": 78581700,
   "status": "passed"
 });
 });
