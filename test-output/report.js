@@ -1,43 +1,43 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("operator.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("login.feature");
 formatter.feature({
   "line": 1,
-  "name": "JBK application Operator Pg",
+  "name": "JBK offline application",
   "description": "",
-  "id": "jbk-application-operator-pg",
+  "id": "jbk-offline-application",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 2961935700,
+  "duration": 3761035100,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 24,
-  "name": "validating OperatorTable data with Excel",
+  "line": 26,
+  "name": "verify Email textbox placeholder",
   "description": "",
-  "id": "jbk-application-operator-pg;validating-operatortable-data-with-excel",
+  "id": "jbk-offline-application;verify-email-textbox-placeholder",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 23,
-      "name": "@operator"
+      "line": 25,
+      "name": "@login"
     }
   ]
 });
 formatter.step({
-  "line": 25,
-  "name": "validating OperatorTable data with Excel",
+  "line": 27,
+  "name": "check placeholder content for Email Textbox",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "OperatorStepDef.validating_OperatorTable_data_with_Excel()"
+  "location": "LoginStepDef.check_placeholder_content_for_Email_Textbox()"
 });
 formatter.result({
-  "duration": 3698347500,
+  "duration": 349740900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 78581700,
+  "duration": 94820400,
   "status": "passed"
 });
 });

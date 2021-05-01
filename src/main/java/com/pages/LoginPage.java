@@ -35,7 +35,9 @@ public class LoginPage {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
-	
+	public String getEmailPlaceholder(){
+		return uname.getAttribute("placeholder");
+	}
 	
 	public RegisterPage clickRegisterLink() {
 		registerLink.click();
