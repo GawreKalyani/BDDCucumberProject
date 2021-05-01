@@ -71,4 +71,8 @@ public class LoginPage {
 		}
 		return actData;
 	}
+	public String getPassPlaceholder() {
+	
+		return pass.getAttribute("placeholder");
+	}
 }

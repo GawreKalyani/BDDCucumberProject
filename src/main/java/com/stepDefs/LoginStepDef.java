@@ -85,4 +85,8 @@ public class LoginStepDef {
 	public void check_placeholder_content_for_Email_Textbox() throws Throwable {
 		Assert.assertEquals(lp.getEmailPlaceholder(), "Email");
 	}
+	@Then("^check placeholder content for Password Textbox$")
+	public void check_placeholder_content_for_Password_Textbox() throws Throwable {
+		Assert.assertEquals(lp.getPassPlaceholder(), "Password");  
+	}
 }

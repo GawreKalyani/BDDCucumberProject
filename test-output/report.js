@@ -7,37 +7,37 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 3761035100,
+  "duration": 2529319400,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 26,
-  "name": "verify Email textbox placeholder",
+  "line": 29,
+  "name": "verify Password textbox placeholder",
   "description": "",
-  "id": "jbk-offline-application;verify-email-textbox-placeholder",
+  "id": "jbk-offline-application;verify-password-textbox-placeholder",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 25,
+      "line": 28,
       "name": "@login"
     }
   ]
 });
 formatter.step({
-  "line": 27,
-  "name": "check placeholder content for Email Textbox",
+  "line": 30,
+  "name": "check placeholder content for Password Textbox",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginStepDef.check_placeholder_content_for_Email_Textbox()"
+  "location": "LoginStepDef.check_placeholder_content_for_Password_Textbox()"
 });
 formatter.result({
-  "duration": 349740900,
+  "duration": 152524000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 94820400,
+  "duration": 70460600,
   "status": "passed"
 });
 });

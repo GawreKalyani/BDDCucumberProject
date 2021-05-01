@@ -22,6 +22,9 @@ Then  verify Url of LoginPage
 
 Scenario: verify error messages for invalid Login credentials
 Then verify error messages for invalid Login credentials
-@login
+
 Scenario: verify Email textbox placeholder
 Then  check placeholder content for Email Textbox
+@login
+Scenario: verify Password textbox placeholder
+Then  check placeholder content for Password Textbox
