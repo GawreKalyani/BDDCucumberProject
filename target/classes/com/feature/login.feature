@@ -1,3 +1,4 @@
+@login
 Feature: JBK offline application
 
 
@@ -25,6 +26,6 @@ Then verify error messages for invalid Login credentials
 
 Scenario: verify Email textbox placeholder
 Then  check placeholder content for Email Textbox
-@login
+
 Scenario: verify Password textbox placeholder
 Then  check placeholder content for Password Textbox

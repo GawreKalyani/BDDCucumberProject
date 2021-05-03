@@ -11,7 +11,7 @@ import cucumber.api.junit.Cucumber;
 	
 	features="src/main/java/com/feature",
 	glue= "com.stepDefs",
-	tags={"@login"},
+	tags={"@userExcel"},
     format= {"pretty","html:test-output"}
 	//staging area (Area between local rep & remote)
 )

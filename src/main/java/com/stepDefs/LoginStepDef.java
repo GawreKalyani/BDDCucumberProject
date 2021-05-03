@@ -74,8 +74,8 @@ public class LoginStepDef {
 	@Then("^verify error messages for invalid Login credentials$")
 	public void verify_error_messages_for_invalid_Login_credentials() throws Throwable {
 		 ArrayList<String>expData=new ArrayList<String>();
-			expData.add("Please enter email.");
-			expData.add("Please enter password.");
+			expData.add("Please enter email as kiran@gmail.com");
+			expData.add("Please enter password 123456");
 			lp.enterUsername("kk@gmail.com");
 			lp.enterPassword("yyy");
 			lp.clickLoginButton();

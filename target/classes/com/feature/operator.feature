@@ -1,3 +1,4 @@
+@operator
 Feature: JBK application Operator Pg
 
 
@@ -20,6 +21,6 @@ Then check all teacher names on monday
    Scenario: verifyNames For MobileNos  starting with 88
    Then check all PersonsNames for mobno starting with 88
    
- @operator  
+   
    Scenario: validating OperatorTable data with Excel
    Then validating OperatorTable data with Excel
