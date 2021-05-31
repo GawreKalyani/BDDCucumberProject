@@ -19,6 +19,12 @@ public class DashboardPage {
 	@FindBy(linkText="LOGOUT")
 	private WebElement logoutBtn;
 	
+	@FindBy(tagName="footer")
+	private WebElement footer;
+	@FindBy(tagName="ol")
+	private WebElement rightcornerHeading;
+	@FindBy(tagName="h1")
+	private WebElement mainheading;
 	@FindBy(xpath="//span[text()='Users']")
 	private WebElement userBtn;
 	@FindBy(xpath="//span[text()='Operators']")
@@ -36,5 +42,15 @@ public class DashboardPage {
 		logoutBtn.click();
 		return new LoginPage(driver);
 	}
-	
+	public String getActFooterText(){
+		System.out.println(footer.getText());
+		return footer.getText();
+		}
+	public String getActMainHeadText(){
+		return mainheading.getText();
+		}
+	public String getRHeadingText(){
+		System.out.println(rightcornerHeading.getText());
+		return rightcornerHeading.getText();
+		}
 }

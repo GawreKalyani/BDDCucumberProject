@@ -8,12 +8,11 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions
 (
-	
 	features="src/main/java/com/feature",
 	glue= "com.stepDefs",
-	tags={"@userExcel"},
+	tags={"@dash"},
     format= {"pretty","html:test-output"}
-	//staging area (Area between local rep & remote)
+	
 )
 public class TestRunner {
 // ~ =not to run that tag ie not run that feature file or the scenario
